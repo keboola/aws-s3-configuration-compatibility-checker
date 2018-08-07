@@ -1,0 +1,9 @@
+version: "2"
+services:
+  node:
+    build: .
+    volumes:
+      - ./:/code
+    working_dir: /code
+    tty: true
+    stdin_open: true
